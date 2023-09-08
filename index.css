@@ -1,0 +1,306 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,800&family=Fraunces:opsz,wght@9..144,900&family=Hanken+Grotesk:wght@400;500;700;800&family=Montserrat:wght@600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,800&family=Fraunces:opsz,wght@9..144,900&family=Hanken+Grotesk:wght@400;500;700;800&family=Josefin+Sans:wght@200;300&family=Montserrat:wght@600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+ *{
+    margin: 0;
+    box-sizing: 0;
+}
+
+.header-text{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Alata', sans-serif;
+}
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul img{
+    display: none;
+}
+.header{
+    padding: 3rem;
+    background-image: url('./images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:top; */
+    height: 100vh;
+}
+.background-text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    font-size: 3.0rem;   
+    font-family: 'Josefin Sans', sans-serif;
+}
+.background-text h1{
+    border:2px solid white ;
+    font-size: 3rem;
+    padding: 2rem;
+}
+.body{    
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5rem;
+}
+.interactive-section{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.section2-text{
+    background-color: white;
+    text-align: left;
+    padding: 4rem;
+    position: absolute;
+    width: 45%;
+    right: -50px;
+    top: 150px;
+    /* z-index: 2; */
+}
+.section2-text p{
+     margin-top: 3rem;
+     line-height: 1.8rem;
+     color: hsl(0, 0%, 55%);
+    font-weight: 600;
+}
+.interactive{
+    width: 60%;
+    height: 100vh;
+}
+.interactive img{
+    width: 100%;
+}
+
+.section3{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: 1px solid hsl(0, 0%, 41%) ;
+    color:hsl(0, 0%, 41%)  ;
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 9rem;
+    font-family:'Josefin Sans', sans-serif; 
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+.section4{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+    margin: 3rem 0 3rem 0;
+}
+.section4 h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 60%;
+    margin: 2rem;
+}
+.deep-earth{
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+}
+.night-arcade{
+    background-image: url('./images/desktop/image-night-arcade.jpg');
+}
+.soccer-team{
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+    
+}
+.the-grid{
+    background-image: url('./images/desktop/image-grid.jpg');
+}
+.above{
+    background-image: url('./images/desktop/image-from-above.jpg'); 
+}
+.pocket{
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+}
+.curiosity{
+    background-image: url('./images/desktop/image-curiosity.jpg');
+}
+.fish-eye{
+    background-image: url('./images/desktop/image-fisheye.jpg');
+}
+.section4 div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    padding: 1rem;
+}
+footer ul{
+   display: flex;
+   list-style: none;
+   gap: 1rem;
+   padding: 0;
+}
+ul a{
+    text-decoration:none ;
+    color: white;
+    transition: all 5s;
+}
+ul a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.class2-img{
+    display: flex;
+    justify-content: space-between;
+}
+.class2-img{
+    transition: all 5s;
+    text-decoration: none;
+}
+.class2-img:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.class2-footer{
+    line-height: 3rem;
+}
+.class2-footer h6{
+    color: gray;
+
+}
+@media (min-width:400px){
+    .background-text h1{
+        width: 50%;
+    }
+}
+@media (max-width:400px) {
+    .header{
+        /* height: 120vh; */
+        padding: 1.5rem;
+        background-image: url('./images/mobile/image-hero.jpg');
+    }
+    header{
+        padding: 2rem 0;
+    }
+   nav ul img {display:block}
+   .interactive-section{
+    display: block;
+    position: static; 
+   }
+   .interactive{
+    width: 100%;
+    height: 10%;
+    margin-top: 4rem;
+   }
+.body{
+    margin: 1rem;
+}
+
+.section2-text{
+    width: fit-content;
+    margin: 2rem;
+    padding: 0;
+    position: static;
+}
+.section2-text h2{
+   font-weight: 100;
+}
+nav ul li{
+    display: none;
+}
+.section3{
+    display: block;
+}
+.section3 button{
+    display: none;
+}
+.section3 h2{
+    display: block;
+    text-align: center;
+    font-weight: 100;
+}
+
+.section4{
+    display: block;
+    width: 100%;
+}
+.section4 div{
+    height: 200px;
+    margin: 1rem 0;
+}
+.section4 h2{
+    font-weight: 100;
+}
+.deep-earth{
+    background-image: url('./images/mobile/image-deep-earth.jpg');
+}
+.night-arcade{
+    background-image: url('./images/mobile/image-night-arcade.jpg');
+}
+.soccer-team{
+    background-image: url('./images/mobile/image-soccer-team.jpg');
+    
+}
+.the-grid{
+    background-image: url('./images/mobile/image-grid.jpg');
+}
+.above{
+    background-image: url('./images/mobile/image-from-above.jpg'); 
+}
+.pocket{
+    background-image: url('./images/mobile/image-pocket-borealis.jpg');
+}
+.curiosity{
+    background-image: url('./images/mobile/image-curiosity.jpg');
+}
+.fish-eye{
+    background-image: url('./images/mobile/image-fisheye.jpg');
+}
+.section4 img{
+    /* width: 100%;
+    height: 10%; */
+}
+.background-text{
+    display: block;
+    margin-top: 6rem;
+}
+.background-text h1{
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-weight: 400;
+    width: fit-content;
+}
+footer{
+    display: block;
+    text-align: center;
+}
+footer ul{
+    display: block;
+    margin: 1rem 0;
+}
+footer .logo{
+    width: 150px;
+}
+.class2-img{
+    justify-content: center;
+    gap:1rem;
+    margin: 1rem  0;
+}
+.class2-footer h6{
+    font-size: 17px;
+}
+}
